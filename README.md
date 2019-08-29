@@ -23,11 +23,11 @@ This readme file would help the graders to grade the assignment easily and also 
 **a. Shells: (20)**
 * The [dataset](https://s3-us-west-2.amazonaws.com/producthunt-downloads/ph-export--2016-04-01.tar.gz) was downloaded using `wget` and extracted into a new directory `product-hunt`.
 * The [EngineeringBasics](https://github.com/chrisparnin/EngineeringBasics.git) repository was git cloned using `git clone https://github.com/chrisparnin/EngineeringBasics.git`
-* The [scripts]() were used to solve the following exercise by running each on the Ubuntu 18.04 terminal in product-hunt directory:
+* The [scripts](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Scripts.txt) were used to solve the following exercise by running each script on the Ubuntu 18.04 terminal in product-hunt directory:
     * Count the number of columns inside the "users.\*.csv" file. [data-ans1.txt]
     * Count the number of times "bitcoin" is referenced inside a the post's file "tagline" column. [data-ans2.txt]
     * Find the row of post with the highest number of upvotes. [data-ans3.txt]
-* The opunit checks were performed using the command `opunit verify local` and the results are stored [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/hw0-opunit_local_check.png). The checks were performed against [opunit.yml]() file
+* The opunit checks were performed using the command `opunit verify local` and the results are stored [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/hw0-opunit_local_check.png). The checks were performed against [opunit.yml](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/opunit.yml) file
 
 **b. Learning Git: (20)**
 * The following exercises were performed on http://pcottle.github.io/learnGitBranching/ and the results/output with commands are stored in [this](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/git.docx) document file:
