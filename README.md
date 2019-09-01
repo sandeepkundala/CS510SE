@@ -44,5 +44,5 @@ This readme file would help the graders to grade the assignment easily and also 
 
 ## **3. Screencast (10):**
 * The short screencast on running the opunit checks can be found here:
-   * [Opunit Profile Check :- For checking installation of softwares/packages](https://drive.google.com/open?id=1F0txXWNkZ7NKdU04eptreKvr6ic7E3iU) [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/CS510-HW0-Opunit%20Profile%20Check.mp4)
-   * [Opunit Verify Local :- Engineering basics - shell exercise](https://drive.google.com/open?id=1ByuNndJnx4YjFM-jN2vxibqdSFwtKYci) [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/CS510-HW0-Opunit%20verify%20local.mp4)
+   * [Opunit Profile Check :- For checking installation of softwares/packages](https://drive.google.com/open?id=1F0txXWNkZ7NKdU04eptreKvr6ic7E3iU) || [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/CS510-HW0-Opunit%20Profile%20Check.mp4)
+   * [Opunit Verify Local :- Engineering basics - shell exercise](https://drive.google.com/open?id=1ByuNndJnx4YjFM-jN2vxibqdSFwtKYci) || [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/CS510-HW0-Opunit%20verify%20local.mp4)
