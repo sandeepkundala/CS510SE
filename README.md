@@ -20,7 +20,7 @@ This readme file would help the graders to grade the assignment easily and also 
 ![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/qa_stackoverflow.png)
 
 **d. Opunit profile checks: (20)**
-* Please find the screenshot [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/hw0-opunit_profile_check.png)
+* Please find the screenshot [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Opunit_Screenshot/hw0-opunit_profile_check.png)
 ![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Opunit_Screenshot/hw0-opunit_profile_check.png)
 
 ## **2. Engineering Basics workshop (50):**
@@ -36,7 +36,7 @@ This readme file would help the graders to grade the assignment easily and also 
 * The opunit checks were performed using the command `opunit verify local` and the results are stored [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Opunit_Screenshot/hw0-opunit_local_check.png). The checks were performed against [opunit.yml](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/opunit.yml) file
 
 **b. Learning Git: (20)**
-* The following exercises were performed on http://pcottle.github.io/learnGitBranching/ and the results/output with commands are stored in [this](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/git.docx) document file:
+* The following exercises were performed on http://pcottle.github.io/learnGitBranching/ and the results/output with commands are stored in [this](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Git_exercise/git.docx) document file:
   * Introduction Sequence
   * Ramping Up
   * Moving Work Around
