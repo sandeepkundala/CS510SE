@@ -5,11 +5,11 @@ This readme file would help the graders to grade the assignment easily and also 
 ## **1. Basic course setup (40):**
 **a. Setup moodle, mattermost and stack overflow accounts: (10)**
 * **Moodle:** [Moodle Profile](https://moodle-courses1920.wolfware.ncsu.edu/user/profile.php?id=110702)
-![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/moodle_profile.png)
+![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Profile_Screenshot/moodle_profile.png)
 * **Mattermost:** username- @sandeep_kundala
-![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/mattermost_profile.jpeg)
+![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Profile_Screenshot/mattermost_profile.jpeg)
 * **Stack Overflow:** [Stack Overflow Profile](https://stackoverflow.com/c/ncsu/users/381/?tab=profile)
-![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/stackoverflow_profile.png)
+![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Profile_Screenshot/stackoverflow_profile.png)
 
 **b. Github: (5)**
 * **Repo for HW0 -** [Github Repository](https://github.ncsu.edu/skundal/HW0-CS510)
@@ -21,7 +21,7 @@ This readme file would help the graders to grade the assignment easily and also 
 
 **d. Opunit profile checks: (20)**
 * Please find the screenshot [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/hw0-opunit_profile_check.png)
-![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/hw0-opunit_profile_check.png)
+![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Opunit_Screenshot/hw0-opunit_profile_check.png)
 
 ## **2. Engineering Basics workshop (50):**
 **a. Shells: (20)**
@@ -33,7 +33,7 @@ This readme file would help the graders to grade the assignment easily and also 
     * Count the number of columns inside the "users.\*.csv" file. [data-ans1.txt]
     * Count the number of times "bitcoin" is referenced inside a the post's file "tagline" column. [data-ans2.txt]
     * Find the row of post with the highest number of upvotes. [data-ans3.txt]
-* The opunit checks were performed using the command `opunit verify local` and the results are stored [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/hw0-opunit_local_check.png). The checks were performed against [opunit.yml](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/opunit.yml) file
+* The opunit checks were performed using the command `opunit verify local` and the results are stored [here](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Opunit_Screenshot/hw0-opunit_local_check.png). The checks were performed against [opunit.yml](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/opunit.yml) file
 
 **b. Learning Git: (20)**
 * The following exercises were performed on http://pcottle.github.io/learnGitBranching/ and the results/output with commands are stored in [this](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/git.docx) document file:
@@ -42,12 +42,12 @@ This readme file would help the graders to grade the assignment easily and also 
   * Moving Work Around
   * A Mixed Bag
   * Advanced Topics
-  ![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/git_screenshot.png)
+  ![](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Git_exercise/git_screenshot.png)
   
 **c. Create a GitHub issue: (10)**
 * The issue to keep track of tasks can be found [here](https://github.ncsu.edu/skundal/HW0-CS510/issues/1)
 
 ## **3. Screencast (10):**
 * The short screencast on running the opunit checks can be found here:
-   * [Opunit Profile Check :- For checking installation of softwares/packages (google drive link)](https://drive.google.com/open?id=1F0txXWNkZ7NKdU04eptreKvr6ic7E3iU) || [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/CS510-HW0-Opunit%20Profile%20Check.mp4)
-   * [Opunit Verify Local :- Engineering basics - shell exercise (google drive link)](https://drive.google.com/open?id=1ByuNndJnx4YjFM-jN2vxibqdSFwtKYci) || [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/CS510-HW0-Opunit%20verify%20local.mp4)
+   * [Opunit Profile Check :- For checking installation of softwares/packages (google drive link)](https://drive.google.com/open?id=1F0txXWNkZ7NKdU04eptreKvr6ic7E3iU) || [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Screencast/CS510-HW0-Opunit%20Profile%20Check.mp4)
+   * [Opunit Verify Local :- Engineering basics - shell exercise (google drive link)](https://drive.google.com/open?id=1ByuNndJnx4YjFM-jN2vxibqdSFwtKYci) || [Link in the repo](https://github.ncsu.edu/skundal/HW0-CS510/blob/master/Screencast/CS510-HW0-Opunit%20verify%20local.mp4)
