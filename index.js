@@ -2,9 +2,9 @@ var request = require('request');
 
 const chalk  = require('chalk');
 
-var urlRoot = "https://api.github.com";
+// var urlRoot = "https://api.github.com";
 // NCSU Enterprise endpoint:
-//var urlRoot = "https://api.github.ncsu.edu";
+var urlRoot = "https://api.github.ncsu.edu";
 
 var config = {};
 // Retrieve our api token from the environment variables.
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV != 'test')
 {
 	(async () => {
 		await listAuthenicatedUserRepos();
-		//await listBranches(userId, "your repo");
+		//await listBranches(userId, "HW1-CS510");
 		//await createRepo(userId,newrepo);
 		//await createIssue(userId, repo, issue);
 		//await enableWikiSupport(userId,repo);
@@ -92,9 +92,10 @@ function listAuthenicatedUserRepos()
 }
 
 // 1. Write code for listBranches in a given repo under an owner. See list branches
-async function listBranches(owner,repo)
+function listBranches(owner,repo)
 {
-	let options = getDefaultOptions(`/`, "GET");
+	// GET /repos/:owner/:repo/branches
+	let options = getDefaultOptions("/user/repos/"+owner+"/"+repo+"/branches", "GET");
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
@@ -102,6 +103,12 @@ async function listBranches(owner,repo)
 		request(options, function (error, response, body) {
 
 			// console.debug( options );
+			if( error )
+                        {
+                                console.log( chalk.red( error ));
+                                reject(error);
+                                return; // Terminate execution.
+                        }
 			resolve( JSON.parse(body) );
 
 		});
