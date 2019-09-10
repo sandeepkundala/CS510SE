@@ -25,7 +25,7 @@ if (process.env.NODE_ENV != 'test')
 {
 	(async () => {
 		await listAuthenicatedUserRepos();
-		//await listBranches(userId, "HW1-CS510");
+		await listBranches(userId, "HW1-CS510");
 		//await createRepo(userId,newrepo);
 		//await createIssue(userId, repo, issue);
 		//await enableWikiSupport(userId,repo);
@@ -95,7 +95,7 @@ function listAuthenicatedUserRepos()
 function listBranches(owner,repo)
 {
 	// GET /repos/:owner/:repo/branches
-	let options = getDefaultOptions("/user/repos/"+owner+"/"+repo+"/branches", "GET");
+	let options = getDefaultOptions("/repos/"+owner+"/"+repo+"/branches", "GET");
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
@@ -109,7 +109,9 @@ function listBranches(owner,repo)
                                 reject(error);
                                 return; // Terminate execution.
                         }
-			resolve( JSON.parse(body) );
+			var obj=JSON.parse(body);
+			console.log(obj)
+			resolve(obj);
 
 		});
 	});
