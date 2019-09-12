@@ -26,7 +26,7 @@ if (process.env.NODE_ENV != 'test')
 	(async () => {
 		await listAuthenicatedUserRepos();
 		await listBranches("skundal", "HW1-CS510");
-		//await createRepo(userId,newrepo);
+		await createRepo("skundal","newtestrepo");
 		//await createIssue(userId, repo, issue);
 		//await enableWikiSupport(userId,repo);
 
@@ -121,15 +121,28 @@ function listBranches(owner,repo)
 // 2. Write code to create a new repo
 async function createRepo(owner,repo)
 {
-	let options = getDefaultOptions("/", "POST");
+
+	let options = getDefaultOptions("/user/repos", "POST");
+	let repo_config = {
+		"name": repo,
+		"description": "Repository created using REST API",
+		"private": false,
+  		"has_issues": true,
+  		"has_projects": true,
+		"has_wiki": true
+	};
+
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
 		request(options, function (error, response, body) {
-
+			if (error) {
+				console.log(chalk.red(error));
+				reject(error);
+				return;//Terminate execution
+			}
 			resolve( response.statusCode );
-
 		});
 	});
 
