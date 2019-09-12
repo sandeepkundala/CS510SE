@@ -27,7 +27,7 @@ if (process.env.NODE_ENV != 'test')
 		await listAuthenicatedUserRepos();
 		await listBranches("skundal", "HW1-CS510");
 		await createRepo("skundal","newtestrepo");
-		//await createIssue(userId, repo, issue);
+		await createIssue("skundal", "HW1-CS510", "Test Issue");
 		//await enableWikiSupport(userId,repo);
 
 	})()
@@ -151,15 +151,24 @@ async function createRepo(owner,repo)
 // 3. Write code for creating an issue for an existing repo.
 async function createIssue(owner,repo, issueName, issueBody)
 {
-	let options = getDefaultOptions("/", "POST");
+	let options = getDefaultOptions("/repos/" + owner + "/" + repo + "/issues", "POST");
+	let issue_data = {
+		"title": "Testing issue creation - REST API",
+		"body": "Testing the issue creation using REST API"
+	};
+	options.body = JSON.stringify(issue_data);
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
 		request(options, function (error, response, body) {
-
+			if (error) {
+				console.log(chalk.red(error));
+				//conole.log("error");
+				reject(error);
+				return;//Terminate execution
+			}
 			resolve( response.statusCode );
-
 		});
 	});
 }
