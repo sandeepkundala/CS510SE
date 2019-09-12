@@ -22,4 +22,4 @@ $ curl http://localhost:3000/pgiPc2
 ```
 
 The output is:
-1[](https://github.ncsu.edu/skundal/HW1-CS510/blob/master/server/CS510_HW1_2.png)
+![](https://github.ncsu.edu/skundal/HW1-CS510/blob/master/server/CS510_HW1_2.png)
