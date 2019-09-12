@@ -131,6 +131,7 @@ async function createRepo(owner,repo)
   		"has_projects": true,
 		"has_wiki": true
 	};
+	options.body = JSON.stringify(repo_config);
 
 
 	// Send a http request to url and specify a callback that will be called upon its return.
