@@ -178,8 +178,8 @@ async function enableWikiSupport(owner,repo)
 {
 	let options = getDefaultOptions("/repos/" + owner + "/" + repo, "PATCH");
 	let wiki_data = {
-		"name": "HW1-CS510",
-		"has_wiki": true
+		"name": repo,
+		"has_wiki": "true"
 	};
 	options.body = JSON.stringify(wiki_data);
 	// Send a http request to url and specify a callback that will be called upon its return.
@@ -192,7 +192,9 @@ async function enableWikiSupport(owner,repo)
 				reject(error);
 				return;//Terminate execution
 			}
-			resolve( JSON.parse(body) );
+				var obj=JSON.parse(body);
+	                        console.log(obj)
+        	                resolve(obj);
 		});
 	});	
 }
