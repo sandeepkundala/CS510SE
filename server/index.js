@@ -20,15 +20,13 @@ var pic_no=0
 app.post('/share', function (req, res) {
    var file_name="/pgiPc".concat(String(pic_no));
    path_dict[file_name]=req.body;
-   console.log(file_name);
-   console.log(pic_no);
    res.send(`success:True,link:http://localhost:3000${file_name}`); 
    pic_no+=1;
 });
 
 
 // Output: Print JSON or return ERROR
-app.get('/pgi*',function(req, res){
+app.get('/pgiPc*',function(req, res){
    if (req.path in path_dict){
     res.send(`${JSON.stringify(path_dict[req.path])}`);
     delete path_dict[req.path];
