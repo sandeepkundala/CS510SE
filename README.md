@@ -2,6 +2,8 @@
 
 This readme file would help the graders to grade the assignment easily and also provide overview on the repo.
 
+The task list can be found [here](https://github.ncsu.edu/skundal/HW1-CS510/issues/11)
+
 ## **1. REST CLIENT (60):**
 
 The JavaScript file can be found [here](https://github.ncsu.edu/skundal/HW1-CS510/blob/master/index.js).
@@ -23,6 +25,8 @@ $ curl http://localhost:3000/pgiPc2
 
 The output is:
 ![](https://github.ncsu.edu/skundal/HW1-CS510/blob/master/server/CS510_HW1_2.png)
+
+The screencast video demoing REST Server can be found [here](https://drive.google.com/open?id=1Zxw-YaVSAcAhfl6q3Nued4nXOgX6Mwpa)
 
 ## **3. CONCEPTS (20):**
 
