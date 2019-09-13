@@ -26,7 +26,7 @@ $ curl http://localhost:3000/pgiPc2
 The output is:
 ![](https://github.ncsu.edu/skundal/HW1-CS510/blob/master/server/CS510_HW1_2.png)
 
-The screencast video demoing REST Server can be found [here](https://drive.google.com/open?id=1Zxw-YaVSAcAhfl6q3Nued4nXOgX6Mwpa)
+The screencast video demoing REST Server can be found [here](https://drive.google.com/open?id=16T__K9SJqpgsT89Kcv2sVLMzP3tFsb8F)
 
 ## **3. CONCEPTS (20):**
 
