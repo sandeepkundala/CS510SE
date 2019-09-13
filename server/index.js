@@ -25,23 +25,17 @@ app.post('/share', function (req, res) {
    }
    file_name = "/"+file_name;
    path_dict[file_name]=req.body;
-   console.log(file_name);
-   console.log(path_dict[file_name]);
 
    let json_post = {
 	"success":true,
 	"link":`http://localhost:3000${file_name}`
    }
-   res.send(json_post)
-   res.send(`success:True,link:http://localhost:3000${file_name}`); 
-
-
+   res.send(json_post);
+   
 });
-
 
 // Output: Print JSON or return ERROR
 app.get('*',function(req, res){
-   console.log(req.path);
    if (req.path in path_dict){
     res.send(`${JSON.stringify(path_dict[req.path])}`);
     delete path_dict[req.path];
