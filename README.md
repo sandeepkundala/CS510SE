@@ -19,8 +19,8 @@ The JavaScript file can be found [here](https://github.ncsu.edu/skundal/HW1-CS51
 ```bash
 # Post content to server. Service returns retrieval link.
 $ curl --request POST -H "Content-Type: application/json" --data '{"coffee":1,"milk":1,"sugar":1,"chocolate":1}' http://localhost:3000/share
-$ curl http://localhost:3000/pgiPc2
-$ curl http://localhost:3000/pgiPc2
+$ curl http://localhost:3000/<ID>
+$ curl http://localhost:3000/<ID>
 ```
 
 The output is:
