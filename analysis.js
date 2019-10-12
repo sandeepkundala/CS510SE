@@ -11,7 +11,7 @@ function main()
 		args = ["analysis.js"];
 	}
 	var filePath = args[0];
-	
+
 	complexity(filePath);
 
 	// Report
@@ -35,26 +35,29 @@ function FunctionBuilder()
 	// The number of parameters for functions
 	this.ParameterCount  = 0,
 	// Number of if statements/loops + 1
-	this.SimpleCyclomaticComplexity = 0;
+	this.SimpleCyclomaticComplexity = 1;
 	// The max depth of scopes (nested ifs, loops, etc)
 	this.MaxNestingDepth    = 0;
 	// The max number of conditions if one decision statement.
 	this.MaxConditions      = 0;
+	// number of return statements
+	this.ReturnCount = 0;
+	// maximum message chains
+	this.MaxMessageChains = 0;
 
 	this.report = function()
 	{
 		console.log(
 		   (
-		   	"{0}(): {1}\n" +
-		   	"============\n" +
-			   "SimpleCyclomaticComplexity: {2}\t" +
-				"MaxNestingDepth: {3}\t" +
-				"MaxConditions: {4}\t" +
-				"Parameters: {5}\n\n"
+		   	"{0}(): {1}\n" + "============\n" +
+			   "SimpleCyclomaticComplexity: {2}\t" +"MaxNestingDepth: {3}\t" +
+				"MaxConditions: {4}\t" + "Parameters: {5}\t" + "Return Count: {6}\t" + 
+				"Max Message Chains: {7}\n\n"
 			)
 			.format(this.FunctionName, this.StartLine,
 				     this.SimpleCyclomaticComplexity, this.MaxNestingDepth,
-			        this.MaxConditions, this.ParameterCount)
+			        this.MaxConditions, this.ParameterCount, this.ReturnCount,
+						this.MaxMessageChains )
 		);
 	}
 };
@@ -67,6 +70,8 @@ function FileBuilder()
 	this.Strings = 0;
 	// Number of imports in a file.
 	this.ImportCount = 0;
+	// Number of The total number of comparision operators (>, <, >=, <=) in file.
+	this.AllComparisons = 0;
 
 	this.report = function()
 	{
@@ -74,8 +79,8 @@ function FileBuilder()
 			( "{0}\n" +
 			  "~~~~~~~~~~~~\n"+
 			  "ImportCount {1}\t" +
-			  "Strings {2}\n"
-			).format( this.FileName, this.ImportCount, this.Strings ));
+			  "Strings {2}\t" + "AllComparisons {3}\n"
+			).format( this.FileName, this.ImportCount, this.Strings, this.AllComparisons ));
 	}
 }
 
@@ -90,10 +95,10 @@ function traverseWithParents(object, visitor)
     for (key in object) {
         if (object.hasOwnProperty(key)) {
             child = object[key];
-            if (typeof child === 'object' && child !== null && key != 'parent') 
+            if (typeof child === 'object' && child !== null && key != 'parent')
             {
             	child.parent = object;
-					traverseWithParents(child, visitor);
+		traverseWithParents(child, visitor);
             }
         }
     }
@@ -113,17 +118,62 @@ function complexity(filePath)
 	builders[filePath] = fileBuilder;
 
 	// Tranverse program with a function visitor.
-	traverseWithParents(ast, function (node) 
+	traverseWithParents(ast, function (node)
 	{
-		if (node.type === 'FunctionDeclaration') 
+
+		// 1c
+		if(node.operator == '>=' || node.operator == '<=' || node.operator == '>' || node.operator == '<'){
+			fileBuilder.AllComparisons++;
+		}
+		// 1d
+		if (node.type == 'Literal' && typeof(node.value)=='string')
+		{
+			fileBuilder.Strings++;
+		}
+		// 1e
+		if(node.name === 'require') {
+			fileBuilder.ImportCount++;
+		}
+
+		if (node.type === 'FunctionDeclaration')
 		{
 			var builder = new FunctionBuilder();
 
 			builder.FunctionName = functionName(node);
 			builder.StartLine    = node.loc.start.line;
+			builder.ParameterCount = node.params.length;
+			
+			traverseWithParents(node, function (node)
+			{
+				if(isDecision(node)) {
+					builder.SimpleCyclomaticComplexity++;
+				}
+			});
 
+			traverseWithParents(node, function (node)
+			{
+				if(node.type === 'ReturnStatement') {
+					builder.ReturnCount++;
+				}
+			});
+
+			traverseWithParents(node, function (node) {
+				var maxCount = 0;
+				if(node.type === 'MemberExpression') {
+					var count = 1;
+					traverseWithParents(node.object, function(node) {
+						if(node.type === "MemberExpression") {
+							count++;
+						}
+					});
+					builder.MaxMessageChains = Math.max(count, builder.MaxMessageChains);
+				}
+			});
 			builders[builder.FunctionName] = builder;
+
 		}
+		
+
 
 	});
 
@@ -134,17 +184,17 @@ function childrenLength(node)
 {
 	var key, child;
 	var count = 0;
-	for (key in node) 
+	for (key in node)
 	{
-		if (node.hasOwnProperty(key)) 
+		if (node.hasOwnProperty(key))
 		{
 			child = node[key];
-			if (typeof child === 'object' && child !== null && key != 'parent') 
+			if (typeof child === 'object' && child !== null && key != 'parent')
 			{
 				count++;
 			}
 		}
-	}	
+	}
 	return count;
 }
 
@@ -174,7 +224,7 @@ function functionName( node )
 if (!String.prototype.format) {
   String.prototype.format = function() {
     var args = arguments;
-    return this.replace(/{(\d+)}/g, function(match, number) { 
+    return this.replace(/{(\d+)}/g, function(match, number) {
       return typeof args[number] != 'undefined'
         ? args[number]
         : match
@@ -185,7 +235,7 @@ if (!String.prototype.format) {
 
 main();
 
-function Crazy (argument) 
+function Crazy (argument)
 {
 
 	var date_bits = element.value.match(/^(\d{4})\-(\d{1,2})\-(\d{1,2})$/);
@@ -276,3 +326,4 @@ mints.toString().split(".")[0] + " " + szmin;
       }
   }
  exports.complexity = complexity;
+
