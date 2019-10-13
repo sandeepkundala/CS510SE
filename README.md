@@ -14,8 +14,8 @@ The following complexeties were computed:
 7. MaxMessageChains
 
 When the complexity analysis is performed on analytics.js by analytics.js
-![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/as-1.png)
-![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/as-2.png)
+![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/Outputs/as-1.png)
+![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/Outputs/as-2.png)
 
 When the complexity analysis is performed on [mystery.js](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/mystery.js) by [analytics.js](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/analysis.js)
-![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/as-3.png)
+![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/Outputs/as-3.png)
