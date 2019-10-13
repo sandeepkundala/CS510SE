@@ -13,7 +13,7 @@ The following complexeties were computed:
 6. SimpleCyclomaticComplexity
 7. MaxMessageChains
 
-When the complexity analysis is performed on analytics.js by analytics.js
+When the complexity analysis is performed on [analysis.js](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/analysis.js) by [analysis.js](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/analysis.js)
 ![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/Outputs/as-1.png)
 ![](https://github.ncsu.edu/skundal/HW2-CS510/blob/master/Outputs/as-2.png)
 
