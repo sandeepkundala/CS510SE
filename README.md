@@ -28,15 +28,18 @@ The most difficult thing was to automate testing using selenium as there were ca
 
 **3. What testing methods might you want to try again in the future on another project?**
 
-I would like to incorporate unittests and automated integration tests in my future projects.
+I would like to incorporate unittests and automated integration tests in my future projects. I would also like to incorporate coverage test using unittests to check the code coverage and write further tests depending upon the result.
 
 ## Process
 
 **1. What was most helpful about implementing scrum-ban in your project?**
 
-Scrum-ban provided us a user-friendly graphical interface to track the progress of the tasks and project. We were able to raise flag whenever a certain task was not in the desired bucket/column which would have led to delay in providing necessary deliverables.
+Answer. Scrum-ban provided us a user-friendly graphical interface to track the progress of the tasks and project. We were able to raise flag whenever a certain task was not in the desired bucket/column which would have led to delay in providing necessary deliverables.
 
 **2. What was most difficult? What would you do differently?**
 
+Answer. The most difficult part was to identify common functions and modularize it so that we have code reusability. In future projects, we would list down all the functions a particular usecase would require and its elements in initial stages of logic coding so that a single code could be used whenever required.
 
 **3. What software processes or practices might you want to try again in the future on another project?**
+
+Answer. I would like to try peer programming and agile development in my future projects as it helped me to solve the issues faced by my peers quickly and save my work regularly so that the team uses the latest code and change their logic in initial stages if necessary.
