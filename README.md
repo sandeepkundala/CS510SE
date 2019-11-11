@@ -28,12 +28,13 @@ The most difficult thing was to automate testing using selenium as there were ca
 
 **3. What testing methods might you want to try again in the future on another project?**
 
-
+I would like to incorporate unittests and automated integration tests in my future projects.
 
 ## Process
 
 **1. What was most helpful about implementing scrum-ban in your project?**
 
+Scrum-ban provided us a user-friendly graphical interface to track the progress of the tasks and project. We were able to raise flag whenever a certain task was not in the desired bucket/column which would have led to delay in providing necessary deliverables.
 
 **2. What was most difficult? What would you do differently?**
 
