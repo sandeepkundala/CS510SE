@@ -9,7 +9,7 @@ Answer. Using wireframe and storyboard helped us to to get clear picture on how 
 
 **2. What was most difficult? What would you do differently?**
 
-Answer. 
+Answer. The most difficult thing was 
 
 
 **3. What design methods might you want to try again in the future on another project?**
@@ -20,11 +20,11 @@ Answer.
 
 **1. What was most helpful about implementing integration tests and mocking in your project?**
 
-
+By creating the mocking infrastructure and implementing integration tests, we were able to find the flaws in the iteraction in early stages and able to corrct our approach to adhere to the proposed bot interactions.
 
 **2. What was most difficult? What would you do differently?**
 
-
+The most difficult thing was to automate testing using selenium as there were cases when the login ID and passwords were incorrectly populated and IDs of few elements in the web page weren't present. We had to try different framework and crack the logic of accessing a certain element in webpage.
 
 **3. What testing methods might you want to try again in the future on another project?**
 
