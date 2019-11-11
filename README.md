@@ -9,12 +9,11 @@ Answer. Using wireframe and storyboard helped us to to get clear picture on how 
 
 **2. What was most difficult? What would you do differently?**
 
-Answer. The most difficult thing was 
-
+Answer. The most difficult thing was to expand the bot's functionality to help the software engineers as much as possible. I would interact with customers and get the requirement so that a software solution can be developed to satisfy as many customers as possible.
 
 **3. What design methods might you want to try again in the future on another project?**
 
-
+Answer. I would use Architectural Design method which specifies the major components of a system, their responsibilities, properties, interfaces, and the relationships and interactions between them. This provides high level view of the solution. The other design method I would use is detailed design method which specifies the internal elements of all major system components. This provides brief description about the various interactions.
 
 ## Testing
 
