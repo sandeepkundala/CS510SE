@@ -41,4 +41,12 @@ Answer. The most difficult part was to identify common functions and modularize 
 
 **3. What software processes or practices might you want to try again in the future on another project?**
 
-Answer. I would like to try peer programming and agile development in my future projects as it helped me to solve the issues faced by my peers quickly and save my work regularly so that the team uses the latest code and change their logic in initial stages if necessary.
+Answer. I would like to try pair programming, agile development and peer review in my future projects as it helped me to solve the issues faced by my peers quickly and save my work regularly so that the team uses the latest code and change their logic in initial stages if necessary.
+
+## Overall
+
+**Considering all the design and architecture methods, testing practices, and software processes you've encountered---compare and constrast how the benefits of the different practices and how they might be useful together.**
+
+- With architectural and detailed design, we were able to come up with a design on how the bot should interact. Using scrum methodology, we were able to track each individuals contributions, findings and blockers (if any) and solve it as soon as possible. 
+- By starting with developing a test driven environment, and using mocking infrastructure, we were able to finalize the final bot interaction and get insight on how the development of the code should look like.
+- Following agile methodology and using kanban board proved to be quite effective in deleivering the project in time.
