@@ -47,6 +47,8 @@ Answer. I would like to try pair programming, agile development and peer review 
 
 **Considering all the design and architecture methods, testing practices, and software processes you've encountered---compare and constrast how the benefits of the different practices and how they might be useful together.**
 
-- With architectural and detailed design, we were able to come up with a design on how the bot should interact. Using scrum methodology, we were able to track each individuals contributions, findings and blockers (if any) and solve it as soon as possible. 
+- With architectural and detailed design, we were able to come up with a design on how the bot should interact. 
+- Using scrum methodology, we were able to track each individuals contributions, findings and blockers (if any) and solve it as soon as possible. 
 - By starting with developing a test driven environment, and using mocking infrastructure, we were able to finalize the final bot interaction and get insight on how the development of the code should look like.
 - Following agile methodology and using kanban board proved to be quite effective in deleivering the project in time.
+- Using pair programming and peer review, we were able to communicate our thoughts and optimized the code as much as possible.
