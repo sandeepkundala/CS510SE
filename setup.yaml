@@ -20,7 +20,14 @@
       update_cache: yes
       install_recommends: yes
     ignore_errors: true
-
+  -
+    name: Install npm
+    apt:
+      name: npm
+      state: latest
+      update_cache: yes
+      install_recommends: yes
+    ignore_errors: true
   -
     name: Install forever
     npm:
