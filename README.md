@@ -12,7 +12,7 @@ Git clone the repository:
 
 **Setup the machine with required libraries and files:**
 
-File: [Setup yaml file](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/setup.yaml)
+File: [Setup Playbook here](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/setup.yaml)
 
 Command: `sudo ansible-playbook setup.yaml`
 
@@ -20,7 +20,7 @@ Command: `sudo ansible-playbook setup.yaml`
 
 ## Tasks:
 
-File: [Tasks yaml file](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/tasks.yaml)
+File: [Tasks Playbook here](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/tasks.yaml)
 
 Command: `sudo ansible-playbook tasks.yaml`
 
@@ -62,3 +62,5 @@ The following can go wrong if developers don't use configuration management:
 - Accepting outdated/incorrect requirements
 - Implementing incrorrect/inefficient designs
 - Implementing incorrect tool for development
+
+**Screencast:** [Video here](https://drive.google.com/file/d/1DYnYkrPQcqNgyelXUTgJEWB-eIBCBiyP/view?usp=sharing)
