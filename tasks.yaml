@@ -16,11 +16,13 @@
       state: latest
      ignore_errors: true
 
-
    - 
      name: Concept-Remove contents of temp folder
      file:
-      path: /tmp/*
-      state: absent
+      path: '/tmp/'
+      state: '{{item}}'
+     with_items:
+      - absent
+      - directory
      ignore_errors: true
-
+     become: yes
