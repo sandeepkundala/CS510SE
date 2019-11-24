@@ -43,5 +43,18 @@ Benefits:
 
 In software engineering, configuration management tools helps developer for establishing, and maintaining, the consistency of a system or product, throughout its software development lifetime.
 
+Software configuration management answers the five Ws, Who, What , When, Where and Why, by maintaining records of changes and what impact these changes have on the application under development as well as upgrades and releases.
 
-If they don't use Co
+The goals of Configuration Management are:
+- Configuration identification
+- Configuration control
+- Configuration status accounting
+- Configuration auditing
+- Build, Process and Environment management
+- Defect tracking
+
+The following can go wrong if developers don't use configuration management:
+
+- Accepting outdated/incorrect requirements
+- Implementing incrorrect/inefficient designs
+- Implementing incorrect tool for development
