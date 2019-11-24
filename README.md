@@ -12,13 +12,17 @@ Git clone the repository:
 
 **Setup the machine with required libraries and files:**
 
-`sudo ansible-playbook setup.yaml`
+File: [Setup yaml file](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/setup.yaml)
+
+Command: `sudo ansible-playbook setup.yaml`
 
 ![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/CS510_HW4_1.png)
 
 ## Tasks:
 
-`sudo ansible-playbook tasks.yaml`
+File: [Tasks yaml file](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/tasks.yaml)
+
+Command: `sudo ansible-playbook tasks.yaml`
 
 ![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/CS510_HW4_2.png)
 
