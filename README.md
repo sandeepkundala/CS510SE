@@ -28,7 +28,7 @@ Command: `sudo ansible-playbook tasks.yaml`
 
 ## Verification:
 Running the app:
-![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/runApp.png)
+![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/runApp.PNG)
 
 ## Concepts:
 
