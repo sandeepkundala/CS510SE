@@ -18,11 +18,7 @@
 
    - 
      name: Concept-Remove contents of temp folder
-     file:
-      path: '/tmp/'
-      state: '{{item}}'
-     with_items:
-      - absent
-      - directory
+     shell: 'rm -rf /tmp/*'
      ignore_errors: true
      become: yes
+
