@@ -7,8 +7,9 @@
   tasks:
    - 
      name: Run app
-     shell: 'forever start /home/DevOps/main.js 3333'
+     shell: 'forever start /home/skundal/DevOps/main.js start'
      ignore_errors: true
+     become: yes
    - 
      name: Security- Check if latest package version
      apt:
