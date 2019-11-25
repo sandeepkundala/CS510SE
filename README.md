@@ -1,4 +1,4 @@
-# HW5 - Configuration Management and Continuous Deployment
+# HW4 - Configuration Management and Continuous Deployment
 
 ## Initial Setup:
 
@@ -25,6 +25,10 @@ File: [Tasks Playbook here](https://github.ncsu.edu/skundal/HW4-CS510/blob/maste
 Command: `sudo ansible-playbook tasks.yaml`
 
 ![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/CS510_HW4_2.png)
+
+## Verification:
+Running the app:
+![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/runApp.png)
 
 ## Concepts:
 
