@@ -27,8 +27,15 @@ Command: `sudo ansible-playbook tasks.yaml`
 ![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/CS510_HW4_2.png)
 
 ## Verification:
+
+Cloning of repsitory:
+![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/output1.png)
+
 Running the app:
 ![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/runApp.PNG)
+
+Deleting contents of tmp folder
+![](https://github.ncsu.edu/skundal/HW4-CS510/blob/master/output2.png)
 
 ## Concepts:
 
