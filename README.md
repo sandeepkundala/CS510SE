@@ -74,4 +74,6 @@ The following can go wrong if developers don't use configuration management:
 - Implementing incrorrect/inefficient designs
 - Implementing incorrect tool for development
 
-**Screencast:** [Video here](https://drive.google.com/file/d/1DYnYkrPQcqNgyelXUTgJEWB-eIBCBiyP/view?usp=sharing)
+## Screencast:
+
+[Video here](https://drive.google.com/file/d/1DYnYkrPQcqNgyelXUTgJEWB-eIBCBiyP/view?usp=sharing)
