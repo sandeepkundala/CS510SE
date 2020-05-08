@@ -1,0 +1,25 @@
+---
+- 
+  hosts: localhost
+  gather_facts: false
+  become_user: root
+
+  tasks:
+   - 
+     name: Run app
+     shell: 'forever start /home/skundal/DevOps/main.js start'
+     ignore_errors: true
+     become: yes
+   - 
+     name: Security- Check if latest package version
+     apt:
+      name: ['bash', 'openssl','openssh-client', 'openssh-server']
+      state: latest
+     ignore_errors: true
+
+   - 
+     name: Concept-Remove contents of temp folder
+     shell: 'rm -rf /tmp/*'
+     ignore_errors: true
+     become: yes
+

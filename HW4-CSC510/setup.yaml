@@ -1,0 +1,55 @@
+---
+-
+  gather_facts: false
+  hosts: localhost
+  become_user: root
+  tasks:
+  -
+    name: Install latest node.js
+    apt:
+      name: nodejs
+      state: latest
+      update_cache: yes
+      install_recommends: yes
+    ignore_errors: true
+    become: yes
+  -
+    name: Install latest npm package
+    apt:
+      name: npm
+      state: latest
+      update_cache: yes
+      install_recommends: yes
+    ignore_errors: true
+    become: yes
+  -
+    name: Install git
+    apt:
+      name: git
+      state: latest
+      update_cache: yes
+      install_recommends: yes
+    ignore_errors: true
+    become: yes
+  -
+    name: Install forever
+    npm:
+      name: forever
+      state: latest
+      global: yes
+    ignore_errors: true
+    become: yes
+  -
+    name: Git Clone
+    git:
+      clone: yes
+      repo: https://github.com/CSC-Devops/App.git
+      dest: /home/skundal/DevOps
+    ignore_errors: true
+    become: yes
+  - 
+    name: Install packages
+    npm:
+      path: /home/skundal/DevOps
+    become: yes
+
