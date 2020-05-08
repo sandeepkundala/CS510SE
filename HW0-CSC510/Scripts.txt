@@ -1,0 +1,3 @@
+head -1 users*.csv | sed 's/[^;]//g' | wc -c > data-ans1.txt
+cut -f 4 -d ';'  posts*.csv| grep -c "bitcoin" > data-ans2.txt
+sort -nrk7,7 -t';' posts*.csv|head -1|cut -f 3,4 -d ';' > data-ans3.txt
